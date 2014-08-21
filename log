@@ -1,0 +1,186 @@
+[
+    {
+        end: {
+            file: './demo.js',
+            comments_before: [],
+            nlb: false,
+            endpos: 10,
+            pos: 9,
+            col: 9,
+            line: 1,
+            value: ';',
+            type: 'punc'
+        },
+        start: {
+            file: './demo.js',
+            comments_before: [],
+            nlb: false,
+            endpos: 3,
+            pos: 0,
+            col: 0,
+            line: 1,
+            value: 'var',
+            type: 'keyword'
+        },
+        definitions: [
+            [Object]
+        ]
+    },
+    {
+        end: {
+            file: './demo.js',
+            comments_before: [],
+            nlb: false,
+            endpos: 21,
+            pos: 20,
+            col: 9,
+            line: 2,
+            value: ';',
+            type: 'punc'
+        },
+        start: {
+            file: './demo.js',
+            comments_before: [],
+            nlb: true,
+            endpos: 14,
+            pos: 11,
+            col: 0,
+            line: 2,
+            value: 'var',
+            type: 'keyword'
+        },
+        definitions: [
+            [Object]
+        ]
+    },
+    {
+        end: {
+            file: './demo.js',
+            comments_before: [],
+            nlb: true,
+            endpos: 46,
+            pos: 45,
+            col: 0,
+            line: 6,
+            value: '}',
+            type: 'punc'
+        },
+        start: {
+            file: './demo.js',
+            comments_before: [],
+            nlb: true,
+            endpos: 25,
+            pos: 23,
+            col: 0,
+            line: 4,
+            value: 'if',
+            type: 'keyword'
+        },
+        body: {
+            end: [Object],
+            start: [Object],
+            body: [Object]
+        },
+        alternative: null,
+        condition: {
+            end: [Object],
+            start: [Object],
+            thedef: undefined,
+            name: 'a',
+            scope: undefined
+        }
+    }
+]
+
+function AST_Token(props){
+    if (props) {
+        this.file = props.file;
+        this.comments_before = props.comments_before;
+        this.nlb = props.nlb;
+        this.endpos = props.endpos;
+        this.pos = props.pos;
+        this.col = props.col;
+        this.line = props.line;
+        this.value = props.value;
+        this.type = props.type;
+    }
+}
+
+
+
+{
+    end: {
+        file: './demo.js',
+        comments_before: [],
+        nlb: true,
+        endpos: 46,
+        pos: 45,
+        col: 0,
+        line: 6,
+        value: '}',
+        type: 'punc'
+    },
+    start: {
+        file: './demo.js',
+        comments_before: [],
+        nlb: false,
+        endpos: 3,
+        pos: 0,
+        col: 0,
+        line: 1,
+        value: 'var',
+        type: 'keyword'
+    },
+    body:[
+        {
+            end: [Object],
+            start: [Object],
+            definitions: [Object],
+            _optimized: true,
+            _squeezed: true
+        },
+        {
+            end: [Object],
+            start: [Object],
+            body: [Object],
+            _optimized: true,
+            _squeezed: true
+        }
+    ],
+    cname: -1,
+    enclosed:
+    [ { name: 'a',
+        orig: [Object],
+        scope: [Object],
+        references: [Object],
+        global: true,
+        mangled_name: null,
+        undeclared: false,
+        constant: false,
+        index: 0,
+        init: [Object] },
+        { name: 'b',
+            orig: [Object],
+            scope: [Object],
+            references: [Object],
+            global: true,
+            mangled_name: null,
+            undeclared: false,
+            constant: false,
+            index: 1,
+            init: [Object] } ],
+        parent_scope: null,
+    uses_eval: false,
+    uses_with: false,
+    functions: { _values: {}, _size: 0 },
+    variables:
+    { _values:
+    { '$a': [Object],
+        '$b': [Object] },
+        _size: 2 },
+    directives: [],
+        globals: { _values: {}, _size: 0 },
+    nesting: 0,
+        _optimized: true,
+    _squeezed: true
+}
